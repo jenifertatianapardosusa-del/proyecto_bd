@@ -1,6 +1,6 @@
 const API_URL = "http://localhost:3000";
 
-// Elementos del DOM
+// Elementos del DOM - Productos
 const listaProductos = document.getElementById("listaProductos");
 const formulario = document.getElementById("formularioProducto");
 const productoId = document.getElementById("productoId");
@@ -10,7 +10,10 @@ const stockInput = document.getElementById("stock");
 const btnGuardar = document.getElementById("btnGuardar");
 const btnCancelar = document.getElementById("btnCancelar");
 const tituloFormulario = document.getElementById("tituloFormulario");
-const formContacto = document.getElementById("formularioContacto");
+
+// Elementos del DOM - Mensajes (Actualizados según tu HTML)
+const formContacto = document.getElementById("formularioMensaje");
+const listaMensajes = document.getElementById("listaMensajes"); 
 
 // 1. Función para consultar los productos y mostrarlos en el DOM (READ)
 async function cargarProductos() {
@@ -132,14 +135,8 @@ async function eliminarProducto(id) {
   }
 }
 
-// 5. Formulario de contacto (demostrativo en contacto.html)
-if (formContacto) {
-  formContacto.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("¡Mensaje de contacto enviado con éxito!");
-    formContacto.reset();
-  });
-}
 
-// Llamado inicial al cargar la página
+
+// Llamados iniciales coordinados al cargar la página web
 cargarProductos();
+

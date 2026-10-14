@@ -65,7 +65,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #694288;
+    color: #8359a7;
 }
 
 /* --- Contenido Principal --- */
@@ -81,7 +81,7 @@ main {
 
 .encabezado-principal h1 {
     font-size: 2rem;
-    color: #0f172a;
+    color: #905fb1;
 }
 
 .encabezado-principal p {
@@ -103,12 +103,12 @@ main {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(154, 93, 211, 0.733);
 }
 
 .tarjeta h2 {
     font-size: 1.25rem;
-    color: #1e293b;
+    color: #8461a5;
     margin-bottom: 18px;
     border-bottom: 2px solid #e2e8f0;
     padding-bottom: 8px;
@@ -147,7 +147,7 @@ textarea {
 input:focus,
 textarea:focus {
     border-color: #774ea5;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    box-shadow: 0 0 0 3px rgba(106, 37, 235, 0.658);
 }
 
 /* Botones */
@@ -173,7 +173,7 @@ textarea:focus {
 
 .btn-guardar {
     flex: 1;
-    background-color: #744ca1;
+    background-color: #9563cf;
     color: #ffffff;
 }
 
@@ -183,7 +183,7 @@ textarea:focus {
 
 .btn-cancelar {
     background-color: #e2e8f0;
-    color: #475569;
+    color: #534769;
 }
 
 .btn-cancelar:hover {
@@ -191,14 +191,14 @@ textarea:focus {
 }
 
 .btn-contacto {
-    background-color: #0f172a;
+    background-color: #875ac2;
     color: #ffffff;
     align-self: flex-start;
     padding: 10px 24px;
 }
 
 .btn-contacto:hover {
-    background-color: #334155;
+    background-color: #483355;
 }
 
 /* --- Tarjetas de Producto --- */
@@ -221,12 +221,12 @@ textarea:focus {
 
 .producto h3 {
     font-size: 1.05rem;
-    color: #0f172a;
+    color: #8848c4;
 }
 
 .producto p {
     font-size: 0.9rem;
-    color: #64748b;
+    color: #875896;
 }
 
 .producto-precio {
@@ -288,8 +288,8 @@ textarea:focus {
 
 /* --- Pie de Página (Footer) --- */
 .footer {
-    background-color: #0f172a;
-    color: #94a3b8;
+    background-color: #ac76cc;
+    color: #000205;
     padding: 20px 0;
     margin-top: auto;
     text-align: center;
