@@ -92,7 +92,7 @@ main {
 /* --- Layout del Panel (Formulario + Lista) --- */
 .panel-tienda {
     display: grid;
-    grid-template-columns: 1000px ;
+    grid-template-columns: minmax(0, 1fr);
     gap: 25px;
     align-items: start;
     margin-bottom: 35px;
@@ -129,7 +129,7 @@ form {
 
 .form-ajuste {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 15px;
 }
 
@@ -147,6 +147,7 @@ label {
 
 input,
 textarea {
+    width: 100%;
     font-family: inherit;
     font-size: 0.95rem;
     padding: 10px 12px;
@@ -310,15 +311,47 @@ textarea:focus {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
-    .panel-tienda {
-        grid-template-columns: 1fr;
+    main {
+        padding: 30px 12px;
     }
 
+    .form-ajuste,
     .fila-contacto {
         grid-template-columns: 1fr;
     }
 
     .nav-links {
-        display: none;
+        gap: 12px;
+        font-size: 0.9rem;
+    }
+
+    .tarjeta {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-contenido {
+        height: auto;
+        min-height: 65px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+        font-size: 0.82rem;
+    }
+
+    .encabezado-principal h1 {
+        font-size: 1.6rem;
+    }
+
+    .tarjeta {
+        padding: 16px;
     }
 }
