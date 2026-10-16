@@ -1,4 +1,4 @@
-const API_URL = "https://proyecto-bd-v9d2.onrender.com";
+const API_URL = "https://proyecto-bd-v9d2.onrender.com/contacto";
 
 // Elementos del DOM
 const formContacto = document.getElementById("formularioMensaje");
