@@ -92,7 +92,7 @@ main {
 /* --- Layout del Panel (Formulario + Lista) --- */
 .panel-tienda {
     display: grid;
-    grid-template-columns: 360px 1fr;
+    grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
     gap: 25px;
     align-items: start;
     margin-bottom: 35px;
@@ -100,6 +100,7 @@ main {
 
 /* Tarjeta contenedora blanca */
 .tarjeta {
+    min-width: 0;
     background-color: #ffffff;
     border-radius: 12px;
     padding: 25px;
@@ -204,7 +205,7 @@ textarea:focus {
 /* --- Tarjetas de Producto --- */
 .lista-productos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
     gap: 15px;
 }
 
@@ -298,8 +299,21 @@ textarea:focus {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
+    .nav-contenido {
+        height: auto;
+        min-height: 65px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
     .panel-tienda {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .tarjeta {
+        padding: 20px;
     }
 
     .fila-contacto {
@@ -307,6 +321,11 @@ textarea:focus {
     }
 
     .nav-links {
-        display: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+        font-size: 0.9rem;
     }
 }
