@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://proyecto-bd-v9d2.onrender.com";
 
 // Elementos del DOM
 const formContacto = document.getElementById("formularioMensaje");
