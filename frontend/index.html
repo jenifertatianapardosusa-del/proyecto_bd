@@ -27,40 +27,71 @@
   <main class="inicio-principal">
     <section class="inicio-hero">
       <div class="contenedor inicio-hero-contenido">
-        <p class="inicio-etiqueta">Bienvenido a Mi Tienda</p>
-        <h1>Todo lo que necesitas, en un solo lugar.</h1>
-        <p class="inicio-descripcion">
-          Explora nuestra tienda y encuentra fácilmente lo que buscas. Estamos aquí para ayudarte.
-        </p>
-        <div class="inicio-acciones">
-          <a class="inicio-boton inicio-boton-principal" href="productos.html">Ver productos</a>
-          <a class="inicio-boton inicio-boton-secundario" href="contacto.html">Contáctanos</a>
+        <div class="inicio-copy">
+          <p class="inicio-etiqueta"><span></span> Te damos la bienvenida</p>
+          <h1>Una forma más sencilla de encontrar lo que buscas.</h1>
+          <p class="inicio-descripcion">
+            Explora nuestro catálogo, descubre tus opciones y cuenta con nosotros si necesitas ayuda.
+          </p>
+          <div class="inicio-acciones">
+            <a class="inicio-boton inicio-boton-principal" href="productos.html">
+              Explorar productos <span aria-hidden="true">→</span>
+            </a>
+            <a class="inicio-boton inicio-boton-secundario" href="contacto.html">Conócenos</a>
+          </div>
+        </div>
+
+        <div class="inicio-visual" aria-hidden="true">
+          <div class="inicio-visual-circulo"></div>
+          <div class="inicio-sello">MT</div>
+          <div class="inicio-nota inicio-nota-superior">
+            <span class="inicio-nota-icono">✦</span>
+            <span><strong>Descubre</strong><small>Un catálogo para ti</small></span>
+          </div>
+          <div class="inicio-panel">
+            <span class="inicio-panel-etiqueta">MI TIENDA</span>
+            <div class="inicio-panel-marca">M<span>.</span></div>
+            <p>Tu próximo<br />hallazgo empieza aquí.</p>
+            <div class="inicio-panel-linea"></div>
+            <span class="inicio-panel-pie">Explora a tu manera <span>↗</span></span>
+          </div>
+          <div class="inicio-nota inicio-nota-inferior">
+            <span class="inicio-nota-icono inicio-nota-contacto">↗</span>
+            <span><strong>¿Te ayudamos?</strong><small>Estamos a un mensaje</small></span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="contenedor inicio-beneficios" aria-label="Sobre nuestra tienda">
-      <article class="inicio-tarjeta">
-        <span class="inicio-icono" aria-hidden="true">✦</span>
-        <h2>Descubre</h2>
-        <p>Encuentra opciones para lo que necesitas y revisa nuestro catálogo cuando quieras.</p>
-      </article>
-      <article class="inicio-tarjeta">
-        <span class="inicio-icono" aria-hidden="true">✓</span>
-        <h2>Compra con confianza</h2>
-        <p>Consulta la disponibilidad y los detalles de cada producto en nuestra página.</p>
-      </article>
-      <article class="inicio-tarjeta">
-        <span class="inicio-icono" aria-hidden="true">♡</span>
-        <h2>Estamos para ayudarte</h2>
-        <p>¿Tienes alguna pregunta? Escríbenos y con gusto te atenderemos.</p>
-      </article>
+    <section class="contenedor inicio-beneficios" aria-labelledby="inicio-beneficios-titulo">
+      <div class="inicio-seccion-cabecera">
+        <p class="inicio-seccion-etiqueta">Pensada para ti</p>
+        <h2 id="inicio-beneficios-titulo">Todo empieza con una buena experiencia.</h2>
+      </div>
+      <div class="inicio-tarjetas">
+        <article class="inicio-tarjeta">
+          <span class="inicio-icono" aria-hidden="true">01</span>
+          <h3>Explora con facilidad</h3>
+          <p>Visita nuestro catálogo y encuentra todos los productos en un solo lugar.</p>
+        </article>
+        <article class="inicio-tarjeta">
+          <span class="inicio-icono" aria-hidden="true">02</span>
+          <h3>Información clara</h3>
+          <p>Consulta los detalles y la disponibilidad de los productos antes de elegir.</p>
+        </article>
+        <article class="inicio-tarjeta">
+          <span class="inicio-icono" aria-hidden="true">03</span>
+          <h3>Atención cercana</h3>
+          <p>Si tienes preguntas, ponte en contacto con nosotros. Estamos para ayudarte.</p>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="contenedor footer-contenido">
-      <p>&copy; 2026 Mi Tienda — Gracias por visitarnos.</p>
+      <p>&copy; 2026 Mi Tienda <span>·</span> Un espacio para encontrar lo que buscas.</p>
+      <a href="contacto.html">¿Necesitas ayuda? Contáctanos <span aria-hidden="true">→</span></a>
     </div>
   </footer>
 </body>
