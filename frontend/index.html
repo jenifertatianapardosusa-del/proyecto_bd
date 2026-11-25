@@ -4,86 +4,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Tienda — Gestión de Productos</title>
-
-  <!-- Fuente moderna -->
+  <title>Mi Tienda — Inicio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap";
-    rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="inicio.css" />
 </head>
 
 <body>
-  <!-- ===== BARRA DE NAVEGACIÓN (NAVBAR) ===== -->
   <header class="navbar">
     <div class="contenedor nav-contenido">
-      <a href="index.html" class="logo"> Mi<strong>Tienda</strong></a>
-      <nav class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="#productos">Productos</a>
+      <a href="index.html" class="logo">Mi<strong>Tienda</strong></a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="productos.html">Productos</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <!-- ===== CONTENIDO PRINCIPAL ===== -->
-  <main class="contenedor" id="inicio">
-    <div class="encabezado-principal">
-      <h1>Sistema de Gestión de Productos</h1>
-      <p>Panel de control conectado a MySQL y Express</p>
-    </div>
-
-    <div class="panel-tienda">
-      <!-- SECCIÓN 1: Formulario de Registro -->
-      <section class="tarjeta" id="registro">
-        <h2 id="tituloFormulario">Registrar Producto</h2>
-
-        <form id="formularioProducto">
-          <!-- Campo oculto para almacenar el ID en caso de edición -->
-          <input type="hidden" id="productoId" value="" />
-
-          <div class="campo">
-            <label for="nombre">Nombre del producto:</label>
-            <input type="text" id="nombre" placeholder="Ej: Camiseta básica" required />
-          </div>
-
-          <div class="campo">
-            <label for="precio">Precio ($):</label>
-            <input type="number" id="precio" step="0.01" placeholder="Ej: 25000" required />
-          </div>
-
-          <div class="campo">
-            <label for="stock">Stock (cantidad):</label>
-            <input type="number" id="stock" placeholder="Ej: 10" required />
-          </div>
-
-          <div class="acciones-form">
-            <button type="submit" id="btnGuardar" class="btn btn-guardar">Guardar Producto</button>
-            <button type="button" id="btnCancelar" class="btn btn-cancelar" style="display: none;">Cancelar</button>
-          </div>
-        </form>
-      </section>
-
-      <!-- SECCIÓN 2: Lista de Productos -->
-      <section class="tarjeta" id="productos">
-        <h2>Lista de Productos</h2>
-        <div id="listaProductos" class="lista-productos">
-          <!-- Los productos se cargan desde app.js -->
+  <main class="inicio-principal">
+    <section class="inicio-hero">
+      <div class="contenedor inicio-hero-contenido">
+        <p class="inicio-etiqueta">Bienvenido a Mi Tienda</p>
+        <h1>Todo lo que necesitas, en un solo lugar.</h1>
+        <p class="inicio-descripcion">
+          Explora nuestra tienda y encuentra fácilmente lo que buscas. Estamos aquí para ayudarte.
+        </p>
+        <div class="inicio-acciones">
+          <a class="inicio-boton inicio-boton-principal" href="productos.html">Ver productos</a>
+          <a class="inicio-boton inicio-boton-secundario" href="contacto.html">Contáctanos</a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="contenedor inicio-beneficios" aria-label="Sobre nuestra tienda">
+      <article class="inicio-tarjeta">
+        <span class="inicio-icono" aria-hidden="true">✦</span>
+        <h2>Descubre</h2>
+        <p>Encuentra opciones para lo que necesitas y revisa nuestro catálogo cuando quieras.</p>
+      </article>
+      <article class="inicio-tarjeta">
+        <span class="inicio-icono" aria-hidden="true">✓</span>
+        <h2>Compra con confianza</h2>
+        <p>Consulta la disponibilidad y los detalles de cada producto en nuestra página.</p>
+      </article>
+      <article class="inicio-tarjeta">
+        <span class="inicio-icono" aria-hidden="true">♡</span>
+        <h2>Estamos para ayudarte</h2>
+        <p>¿Tienes alguna pregunta? Escríbenos y con gusto te atenderemos.</p>
+      </article>
+    </section>
   </main>
 
-  <!-- ===== PIE DE PÁGINA (FOOTER) ===== -->
   <footer class="footer">
     <div class="contenedor footer-contenido">
-      <p>&copy 2026 Mi Tienda — Proyecto Formativo con Node.js, Express y MySQL.</p>
+      <p>&copy; 2026 Mi Tienda — Gracias por visitarnos.</p>
     </div>
   </footer>
-
-  <script src="app.js"></script>
 </body>
 
 </html>

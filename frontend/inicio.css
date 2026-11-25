@@ -1,0 +1,122 @@
+.inicio-principal {
+    flex: 1;
+    padding: 0 0 48px;
+}
+
+.inicio-hero {
+    display: flex;
+    min-height: 390px;
+    align-items: center;
+    background: linear-gradient(135deg, #f1e8fa 0%, #fbf8ff 55%, #e8d9f5 100%);
+}
+
+.inicio-hero-contenido {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.inicio-etiqueta {
+    margin-bottom: 12px;
+    color: #8359a7;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.inicio-hero h1 {
+    max-width: 700px;
+    color: #39284b;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    line-height: 1.15;
+}
+
+.inicio-descripcion {
+    max-width: 580px;
+    margin-top: 18px;
+    color: #64748b;
+    font-size: 1.05rem;
+}
+
+.inicio-acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.inicio-boton {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 2px solid #875ac2;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.inicio-boton-principal {
+    background-color: #875ac2;
+    color: #ffffff;
+}
+
+.inicio-boton-principal:hover {
+    background-color: #70469f;
+}
+
+.inicio-boton-secundario {
+    color: #70469f;
+}
+
+.inicio-boton-secundario:hover {
+    background-color: #ffffff;
+}
+
+.inicio-beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding-top: 38px;
+}
+
+.inicio-tarjeta {
+    padding: 24px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(80, 52, 104, 0.1);
+}
+
+.inicio-icono {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    background: #f1e8fa;
+    color: #8359a7;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.inicio-tarjeta h2 {
+    margin-bottom: 8px;
+    color: #39284b;
+    font-size: 1.1rem;
+}
+
+.inicio-tarjeta p {
+    color: #64748b;
+    font-size: 0.93rem;
+}
+
+@media (max-width: 768px) {
+    .inicio-hero {
+        min-height: 340px;
+    }
+
+    .inicio-beneficios {
+        grid-template-columns: 1fr;
+        padding-top: 24px;
+    }
+}
