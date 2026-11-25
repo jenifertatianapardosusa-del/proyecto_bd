@@ -1,4 +1,9 @@
-const API_URL = "https://proyecto-bd-v9d2.onrender.com";
+const API_URL =
+  window.location.hostname === "localhost" || 
+  window.location.hostname === "127.0.0.1" ||
+  window.location.protocol === "file:"
+    ? "http://localhost:3000"
+    : "https://proyecto-bd-v9d2.onrender.com";
 
 // Elementos del DOM - Productos
 const listaProductos = document.getElementById("listaProductos");
