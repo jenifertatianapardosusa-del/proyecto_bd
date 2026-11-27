@@ -3,7 +3,7 @@ const API_URL =
   window.location.hostname === "127.0.0.1" ||
   window.location.protocol === "file:"
     ? "http://localhost:3000"
-    : " https://proyecto-bd-v9d2.onrender.com";
+    : "https://proyecto-bd-v9d2.onrender.com";
 
 // Elementos del DOM
 const listaProductos = document.getElementById("listaProductos");
