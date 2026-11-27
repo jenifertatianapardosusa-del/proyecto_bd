@@ -14,11 +14,11 @@ app.use(express.json({limit: "10mb"})); // Habilitar la lectura de datos en form
 
 // verificar al iniciar que la tabla de productos en mysql tenga la columna imagen_url 
 
-conexion.query("show COLUMS FROM productos LIKE 'imagen_url'",
+conexion.query("show COLUMNS FROM productos LIKE 'imagen_url'",
   (err, resultados) => {
     if (!err && Array.isArray(resultados) && resultados.length === 0){
       conexion.query(
-        "ALTER TABLE productos ADD COLUM imagen_url VARCHAR(500) DEFAULT NULL",
+        "ALTER TABLE productos ADD COLUMN imagen_url VARCHAR(500) DEFAULT NULL",
         (errAlter) => {
           if (!errAlter) {
             console.log("columna 'imagen_url' verificada/agregada en la tabla 'productos'");
